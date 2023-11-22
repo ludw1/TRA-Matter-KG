@@ -1,0 +1,240 @@
+Electron Paramagnetic Resonance Spectroscopy
+Metalloproteins
+Structural biology
+Software development
+Strong interaction
+Baryon spectroscopy
+Excitation spectrum of nucleons
+Cosmology
+Cosmic Microwave Background
+Galaxy clusters
+Microwave instrumentation
+Heavy Quarks
+CKM Metrology with Vub and Vcb
+Search for new physics in semileptonic decays
+Search for dark photons and heavy neutral leptons at the LHC
+Study of collider neutrinos
+Interstellar Medium
+Star Formation
+Atomic & Molecular Spectroscopy
+Radioastronomy
+Heavy elementary particles
+Particle physics at the highest energies
+Machine learning in particle physics
+Membrane contact sites in neurons
+In vivo modelling and imaging in Drosophila melanogaster brains
+Organelle dynamics
+Super-resolution microscopy
+C-H functionalization
+transition metal catalysis
+photocatalysis
+Interstellar medium
+Milky Way structure
+Star formation quenching
+Galaxy evolution
+Particle Physics
+Higgs-Boson
+Axions
+Gridpix Detectors
+Experimental high-energy physics
+Hadron collider physics
+Higgs boson
+Flavor physics
+Radiation detectors
+microelectronics
+Dark Matter
+LHC Physics
+Cosmological inflation
+Theoretical Elementary Particle Physics
+Beyond Standard Model Phenomenology
+LHC Physics
+Light long-lived Particles
+Quantenchromodynamik
+Quantenfeldtheorie
+Phänomenologie der Elementarteilchen
+Chemical synthesis and purification of bioactive molecules
+Development of in vitro assays
+Development of radioligands, fluorescence ligands
+Stability and metabolism studies
+Mass Spectrometry
+Detection of reactive Intermediates
+Reaction Mechanisms
+Structure Elucidation
+DNA Nanotechnology
+Aptamer research
+Chemical biology
+The Chemistry of Transition Metal-Tetrel Triple bonds
+Molecular Chemistry of Silicon in Low Oxidation States
+Quantum Chemical Analyses of Novel Bonds
+Particle physics
+Lattice field theory
+Quantum computing
+Machine learning
+Catalysis
+Electron Transfer
+Radicals
+Titanium
+Quantum chemistry
+Density functional theory
+Thermochemistry
+Theoretical spectroscopy
+Drug design
+Enzyme inhibitors
+PROTACs
+Activity-based probes
+(Local) coupled cluster methods
+Computational chemistry
+Multilevel workflows
+Benchmarking and high performance computing
+Quantum optics
+Quantum science
+Quantum technology
+Ultracold atoms
+pi-Conjugated oligomers and polymers
+Macrocycles and molecular spoked wheels
+Ladder polymers
+Antimicrobial coatings
+Particle detection for tracking in particle physics experiments
+Ultra-fast and high resolution particle detecting system
+Semiconductor pixel detectors
+X-ray detection and imaging detectors
+Self-assembled monolayers
+Scanning probe microscopy
+Solid/liquid interface
+Shape-persistent molecules
+Strangeness photoproduction
+coherent photoproduction off the deuteron
+virology
+innate immunity
+extracellular vesicles
+RNA biology
+Gas-filled particle detectors
+Time projection chambers
+GridPix-Decectors
+Neutron detectors
+Experimental hadron physics with electromagnetic and hadronic probes: hadron structure and spectroscopy
+Physics beyond the Standard Model with hadron physics methods: search for Dark Photons
+Detector physics: development of high-resolution, fast Micropattern Gaseous Detectors and readout electronics
+Electron transfer via coupled Tyr/Trp networks in metalloenzymes.
+Unraveling the molecular mechanism of O2-converting copper-containing enzymes.
+Rational design of artificial copper/heme-containing biocatalysts.
+AI applications
+UV/Vis Raman spectro-electrochemistry – method development.
+Quantum cluster equilibrium mode
+Ab initio and traditional molecular dynamics simulations
+Solvents and solvent effects
+Development of tool for analyzing and visualizing trajectories
+Fundamental physics
+Gravity
+Radio astronomy
+Pulsars
+Supramolecular chemistry and molecular self-assembly of metallo-supramolecular coordination complexes and cages
+Photoswitsches, their synthesis, investigation, and their use in supramolecular architectures
+Thermodynamic and kinetic investigation of self-assembled dynamic systems
+Thermodynamic investigation of host-guest equilibria
+Theoretical quantum many-body physics
+Non-equilibrium dynamics in strongly correlated electron systems and in Bose-Einstein condensates (BEC)
+Stellar populations
+Stellar dynamics
+Milgromian dynamics
+Cosmology
+Nucleocytoplasmic transport
+Neuronal connectomics
+Light sheet fluorescence microscopy
+Antibiotic mode of action
+Satellite geodesy
+Sea level and climate
+Terrestrial water cycle
+Future sensors and observation systems
+Massive star evolution
+Origin of the chemical elements
+Compact stars in binaries
+Gravitational wave sources
+Metal-metal bonding
+Ligand design
+Catalysis
+Energy and sustainability
+Quantum many-body systems
+Nonequilibrium phenomena
+Thermalization
+Quantum computing
+Gaseous Detectors
+Fast Timing Detectors
+Data Acquisition Systems
+Maschine Learing on FPGA
+Organic Synthesis
+Supramolecular Chemistry
+Self-Assembly Processes
+Organic Electronics
+Aptamers
+Optogenetics
+Targeted therapies
+Total synthesis of complex natural products
+Synthetic method development
+Structure-activity relationships
+Quantum Optics
+Quantum Information Science
+Laser Physics
+Atomic Physics
+Cosmology
+Large-scale structure of the Universe
+Cosmological probe combination
+Machine Learning
+Variational Inference
+Lattice Field Theory
+Quantum Computing
+Cosmology
+X-ray astronomy
+Galaxy clusters
+Statistical methods
+Large experiment data acquisition
+HV-CMOS sensors
+Radiation hard pixel detectors
+The LHCb Mighy Tracker
+Nucleic acid structures formation and function in cells
+Protein - DNA or RNA interaction
+Genome stability regulation
+Nucleic acid structure mediated immune changes
+Hydrogen Bonds
+Vibrational Spectroscopy
+Supramolecular Chemistry
+X-ray astronomy
+Cosmology
+Galaxy clusters
+Supermassive black holes
+Viruses assembly
+Dynamics of viral infection
+Fluorescence microscopy
+Structure-Dynamics-Function Relationships
+Biomacromolecular Complexes
+EPR Spectroscopy
+Quantum optics
+Photonics
+Quantum gases of light and matter
+Thermodynamics
+Surface Science
+Adsorption of functional organic molecules on surfaces
+Collective optical properties
+Laser and fluorescence spectroscopy
+Meson Spectroscopy
+Baryon Spectroscopy
+Partial Wave Analysis
+Exotic States
+Bose-Einstein condensation of photons
+Coherent light-matter interaction
+High-pressure spectroscopy
+Femtochemistry
+Laser spectroscopy
+Chemical dynamics
+Sustainability
+Experimental quantum optics
+Experimental High Energy Particle Physics
+Hadron Collider Physics
+Radiation Detectors and Micro Electronics
+Hadron spectroscopy
+Amplitude analysis and partial-wave analysis
+Polarization measurements for photonuclear reactions   and complete experiments
+Ionic Liquids
+Computational Chemistry
+Thermodynamics
+Electrochemistry

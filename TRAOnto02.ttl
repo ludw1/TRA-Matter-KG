@@ -1,0 +1,1199 @@
+@prefix : <http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/> .
+
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Biology
+:Biology rdf:type owl:Class ;
+         rdfs:subClassOf :Life_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Chemistry
+:Chemistry rdf:type owl:Class ;
+           rdfs:subClassOf :Natural_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Computation
+:Computation rdf:type owl:Class ;
+             rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Concept
+:Concept rdf:type owl:Class ;
+         rdfs:subClassOf :Model .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Data_Analysis
+:Data_Analysis rdf:type owl:Class ;
+               rdfs:subClassOf :Computation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Discipline
+:Discipline rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Instrumentation
+:Instrumentation rdf:type owl:Class ;
+                 rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Life_Science
+:Life_Science rdf:type owl:Class ;
+              rdfs:subClassOf :Discipline .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Medicine
+:Medicine rdf:type owl:Class ;
+          rdfs:subClassOf :Life_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Method
+:Method rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Model
+:Model rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Natural_Science
+:Natural_Science rdf:type owl:Class ;
+                 rdfs:subClassOf :Discipline .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Particle_Production
+:Particle_Production rdf:type owl:Class ;
+                     rdfs:subClassOf :Process .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Phenomenology
+:Phenomenology rdf:type owl:Class ;
+               rdfs:subClassOf :Model .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Phenomenon
+:Phenomenon rdf:type owl:Class ;
+            rdfs:subClassOf :Phenomenology ,
+                            :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Physics
+:Physics rdf:type owl:Class ;
+         rdfs:subClassOf :Natural_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Theory
+:Theory rdf:type owl:Class ;
+        rdfs:subClassOf :Model .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#(Local)_coupled_cluster_methods
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#(Local)_coupled_cluster_methods> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Atomic_&_Molecular_Spectroscopy
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Atomic_&_Molecular_Spectroscopy> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics> rdf:type owl:Class ;
+                                                                                                                                                                                         rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Development_of_radioligands,_fluorescence_ligands
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Development_of_radioligands,_fluorescence_ligands> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Rational_design_of_artificial_copper/heme-containing_biocatalysts.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Rational_design_of_artificial_copper/heme-containing_biocatalysts.> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Solid/liquid_interface
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Solid/liquid_interface> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#UV/Vis_Raman_spectro-electrochemistry_–_method_development.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#UV/Vis_Raman_spectro-electrochemistry_–_method_development.> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/AI_applications
+:AI_applications rdf:type owl:Class ;
+                 rdfs:subClassOf :Computer_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ab_initio_and_traditional_molecular_dynamics_simulations
+:Ab_initio_and_traditional_molecular_dynamics_simulations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Activity-based_probes
+:Activity-based_probes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Adsorption_of_functional_organic_molecules_on_surfaces
+:Adsorption_of_functional_organic_molecules_on_surfaces rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Amplitude_analysis_and_partial-wave_analysis
+:Amplitude_analysis_and_partial-wave_analysis rdf:type owl:Class ;
+                                              owl:equivalentClass :Partial_Wave_Analysis .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Antibiotic_mode_of_action
+:Antibiotic_mode_of_action rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Antimicrobial_coatings
+:Antimicrobial_coatings rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Aptamer_research
+:Aptamer_research rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Aptamers
+:Aptamers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Astronomy
+:Astronomy rdf:type owl:Class ;
+           rdfs:subClassOf :Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Atomic_Physics
+:Atomic_Physics rdf:type owl:Class ;
+                rdfs:subClassOf :Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Axions
+:Axions rdf:type owl:Class ;
+        rdfs:subClassOf :Concept ,
+                        :Quantenfeldtheorie .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Baryon_Spectroscopy
+:Baryon_Spectroscopy rdf:type owl:Class ;
+                     rdfs:subClassOf :Phenomenology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Baryon_spectroscopy
+:Baryon_spectroscopy rdf:type owl:Class ;
+                     rdfs:subClassOf :Hadron_spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Benchmarking_and_high_performance_computing
+:Benchmarking_and_high_performance_computing rdf:type owl:Class ;
+                                             rdfs:subClassOf :Computation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Beyond_Standard_Model_Phenomenology
+:Beyond_Standard_Model_Phenomenology rdf:type owl:Class ;
+                                     rdfs:subClassOf :Phenomenology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Biomacromolecular_Complexes
+:Biomacromolecular_Complexes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Bose-Einstein_condensation_of_photons
+:Bose-Einstein_condensation_of_photons rdf:type owl:Class ;
+                                       rdfs:subClassOf :Phenomenon ,
+                                                       :Quantum_optics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/C-H_functionalization
+:C-H_functionalization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/CKM_Metrology_with_Vub_and_Vcb
+:CKM_Metrology_with_Vub_and_Vcb rdf:type owl:Class ;
+                                rdfs:subClassOf :Flavor_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Catalysis
+:Catalysis rdf:type owl:Class ;
+           rdfs:subClassOf :Chemistry ,
+                           :Process .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Chemical_biology
+:Chemical_biology rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Chemical_dynamics
+:Chemical_dynamics rdf:type owl:Class ;
+                   rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Chemical_synthesis_and_purification_of_bioactive_molecules
+:Chemical_synthesis_and_purification_of_bioactive_molecules rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Coherent_light-matter_interaction
+:Coherent_light-matter_interaction rdf:type owl:Class ;
+                                   rdfs:subClassOf :Phenomenon ,
+                                                   :Photonics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Collective_optical_properties
+:Collective_optical_properties rdf:type owl:Class ;
+                               rdfs:subClassOf :Quantum_optics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Compact_stars_in_binaries
+:Compact_stars_in_binaries rdf:type owl:Class ;
+                           rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Computational_Chemistry
+:Computational_Chemistry rdf:type owl:Class ;
+                         owl:equivalentClass :Computational_chemistry ;
+                         rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Computational_chemistry
+:Computational_chemistry rdf:type owl:Class ;
+                         rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Computer_Science
+:Computer_Science rdf:type owl:Class ;
+                  rdfs:subClassOf :Discipline .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Cosmic_Microwave_Background
+:Cosmic_Microwave_Background rdf:type owl:Class ;
+                             rdfs:subClassOf :Phenomenon ,
+                                             :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Cosmological_inflation
+:Cosmological_inflation rdf:type owl:Class ;
+                        rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Cosmological_probe_combination
+:Cosmological_probe_combination rdf:type owl:Class ;
+                                rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Cosmology
+:Cosmology rdf:type owl:Class ;
+           rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/DNA_Nanotechnology
+:DNA_Nanotechnology rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Dark_Matter
+:Dark_Matter rdf:type owl:Class ;
+             rdfs:subClassOf :Concept ,
+                             :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Data_Acquisition_Systems
+:Data_Acquisition_Systems rdf:type owl:Class ;
+                          rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Density_functional_theory
+:Density_functional_theory rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Detection_of_reactive_Intermediates
+:Detection_of_reactive_Intermediates rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Detectors
+:Detectors rdf:type owl:Class ;
+           rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Development_of_in_vitro_assays
+:Development_of_in_vitro_assays rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Development_of_tool_for_analyzing_and_visualizing_trajectories
+:Development_of_tool_for_analyzing_and_visualizing_trajectories rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Drug_design
+:Drug_design rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Dynamics_of_viral_infection
+:Dynamics_of_viral_infection rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/EPR_Spectroscopy
+:EPR_Spectroscopy rdf:type owl:Class ;
+                  rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Electrochemistry
+:Electrochemistry rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Electron_Paramagnetic_Resonance_Spectroscopy
+:Electron_Paramagnetic_Resonance_Spectroscopy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Electron_Transfer
+:Electron_Transfer rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Energy_and_sustainability
+:Energy_and_sustainability rdf:type owl:Class ;
+                           owl:equivalentClass :Sustainability .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Enzyme_inhibitors
+:Enzyme_inhibitors rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Excitation_spectrum_of_nucleons
+:Excitation_spectrum_of_nucleons rdf:type owl:Class ;
+                                 rdfs:subClassOf :Phenomenon ,
+                                                 :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Exotic_States
+:Exotic_States rdf:type owl:Class ;
+               rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Experimental_High_Energy_Particle_Physics
+:Experimental_High_Energy_Particle_Physics rdf:type owl:Class ;
+                                           owl:equivalentClass :Experimental_high-energy_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Experimental_high-energy_physics
+:Experimental_high-energy_physics rdf:type owl:Class ;
+                                  rdfs:subClassOf :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Experimental_quantum_optics
+:Experimental_quantum_optics rdf:type owl:Class ;
+                             rdfs:subClassOf :Quantum_optics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Fast_Timing_Detectors
+:Fast_Timing_Detectors rdf:type owl:Class ;
+                       rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Femtochemistry
+:Femtochemistry rdf:type owl:Class ;
+                rdfs:subClassOf :Chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Flavor_physics
+:Flavor_physics rdf:type owl:Class ;
+                rdfs:subClassOf :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Fluorescence_microscopy
+:Fluorescence_microscopy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Fundamental_physics
+:Fundamental_physics rdf:type owl:Class ;
+                     rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Future_sensors_and_observation_systems
+:Future_sensors_and_observation_systems rdf:type owl:Class ;
+                                        rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Galaxy_clusters
+:Galaxy_clusters rdf:type owl:Class ;
+                 rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Galaxy_evolution
+:Galaxy_evolution rdf:type owl:Class ;
+                  rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Gas-filled_particle_detectors
+:Gas-filled_particle_detectors rdf:type owl:Class ;
+                               rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Gaseous_Detectors
+:Gaseous_Detectors rdf:type owl:Class ;
+                   rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Genome_stability_regulation
+:Genome_stability_regulation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Gravitational_wave_sources
+:Gravitational_wave_sources rdf:type owl:Class ;
+                            rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Gravity
+:Gravity rdf:type owl:Class ;
+         rdfs:subClassOf :Physics ,
+                         :Theory .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/GridPix-Decectors
+:GridPix-Decectors rdf:type owl:Class ;
+                   rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Gridpix_Detectors
+:Gridpix_Detectors rdf:type owl:Class ;
+                   rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/HV-CMOS_sensors
+:HV-CMOS_sensors rdf:type owl:Class ;
+                 rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Hadron_Collider_Physics
+:Hadron_Collider_Physics rdf:type owl:Class ;
+                         owl:equivalentClass :Hadron_collider_physics ;
+                         rdfs:subClassOf :Experimental_High_Energy_Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Hadron_collider_physics
+:Hadron_collider_physics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Hadron_spectroscopy
+:Hadron_spectroscopy rdf:type owl:Class ;
+                     rdfs:subClassOf :Particle_Physics ,
+                                     :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Heavy_Quarks
+:Heavy_Quarks rdf:type owl:Class ;
+              rdfs:subClassOf :Phenomenon ,
+                              :Flavor_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Heavy_elementary_particles
+:Heavy_elementary_particles rdf:type owl:Class ;
+                            rdfs:subClassOf :Phenomenon ,
+                                            :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Higgs-Boson
+:Higgs-Boson rdf:type owl:Class ;
+             rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Higgs_boson
+:Higgs_boson rdf:type owl:Class ;
+             rdfs:subClassOf :Phenomenon ,
+                             :Particle_Physics ,
+                             :Theoretical_Elementary_Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/High-pressure_spectroscopy
+:High-pressure_spectroscopy rdf:type owl:Class ;
+                            rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Hydrogen_Bonds
+:Hydrogen_Bonds rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/In_vivo_modelling_and_imaging_in_Drosophila_melanogaster_brains
+:In_vivo_modelling_and_imaging_in_Drosophila_melanogaster_brains rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Interstellar_Medium
+:Interstellar_Medium rdf:type owl:Class ;
+                     owl:equivalentClass :Interstellar_medium .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Interstellar_medium
+:Interstellar_medium rdf:type owl:Class ;
+                     rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ionic_Liquids
+:Ionic_Liquids rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/LHC_Physics
+:LHC_Physics rdf:type owl:Class ;
+             rdfs:subClassOf :Hadron_collider_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ladder_polymers
+:Ladder_polymers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Large-scale_structure_of_the_Universe
+:Large-scale_structure_of_the_Universe rdf:type owl:Class ;
+                                       rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Large_experiment_data_acquisition
+:Large_experiment_data_acquisition rdf:type owl:Class ;
+                                   rdfs:subClassOf :Data_Acquisition_Systems .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Laser_Physics
+:Laser_Physics rdf:type owl:Class ;
+               rdfs:subClassOf :Quantum_optics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Laser_and_fluorescence_spectroscopy
+:Laser_and_fluorescence_spectroscopy rdf:type owl:Class ;
+                                     rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Laser_spectroscopy
+:Laser_spectroscopy rdf:type owl:Class ;
+                    rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Lattice_Field_Theory
+:Lattice_Field_Theory rdf:type owl:Class ;
+                      owl:equivalentClass :Lattice_field_theory ;
+                      rdfs:subClassOf :Quantenfeldtheorie .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Lattice_field_theory
+:Lattice_field_theory rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ligand_design
+:Ligand_design rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Light_long-lived_Particles
+:Light_long-lived_Particles rdf:type owl:Class ;
+                            rdfs:subClassOf :Concept ,
+                                            :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Light_sheet_fluorescence_microscopy
+:Light_sheet_fluorescence_microscopy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Machine_Learning
+:Machine_Learning rdf:type owl:Class ;
+                  owl:equivalentClass :Machine_learning ;
+                  rdfs:subClassOf :Statistical_methods .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Machine_learning
+:Machine_learning rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Machine_learning_in_particle_physics
+:Machine_learning_in_particle_physics rdf:type owl:Class ;
+                                      rdfs:subClassOf :Computer_Science ,
+                                                      :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Macrocycles_and_molecular_spoked_wheels
+:Macrocycles_and_molecular_spoked_wheels rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Maschine_Learing_on_FPGA
+:Maschine_Learing_on_FPGA rdf:type owl:Class ;
+                          rdfs:subClassOf :Machine_learning .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Mass_Spectrometry
+:Mass_Spectrometry rdf:type owl:Class ;
+                   rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Massive_star_evolution
+:Massive_star_evolution rdf:type owl:Class ;
+                        rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Membrane_contact_sites_in_neurons
+:Membrane_contact_sites_in_neurons rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Meson_Spectroscopy
+:Meson_Spectroscopy rdf:type owl:Class ;
+                    rdfs:subClassOf :Hadron_spectroscopy ,
+                                    :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Metal-metal_bonding
+:Metal-metal_bonding rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Metalloproteins
+:Metalloproteins rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Microwave_instrumentation
+:Microwave_instrumentation rdf:type owl:Class ;
+                           rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Milgromian_dynamics
+:Milgromian_dynamics rdf:type owl:Class ;
+                     rdfs:subClassOf :Concept ,
+                                     :Cosmology ,
+                                     :Gravity .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Milky_Way_structure
+:Milky_Way_structure rdf:type owl:Class ;
+                     rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Molecular_Chemistry_of_Silicon_in_Low_Oxidation_States
+:Molecular_Chemistry_of_Silicon_in_Low_Oxidation_States rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Multilevel_workflows
+:Multilevel_workflows rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Neuronal_connectomics
+:Neuronal_connectomics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Neutron_detectors
+:Neutron_detectors rdf:type owl:Class ;
+                   rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Nonequilibrium_phenomena
+:Nonequilibrium_phenomena rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Nucleic_acid_structure_mediated_immune_changes
+:Nucleic_acid_structure_mediated_immune_changes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Nucleic_acid_structures_formation_and_function_in_cells
+:Nucleic_acid_structures_formation_and_function_in_cells rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Nucleocytoplasmic_transport
+:Nucleocytoplasmic_transport rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Optics
+:Optics rdf:type owl:Class ;
+        rdfs:subClassOf :Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Optogenetics
+:Optogenetics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Organelle_dynamics
+:Organelle_dynamics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Organic_Electronics
+:Organic_Electronics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Organic_Synthesis
+:Organic_Synthesis rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Origin_of_the_chemical_elements
+:Origin_of_the_chemical_elements rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/PROTACs
+:PROTACs rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Partial_Wave_Analysis
+:Partial_Wave_Analysis rdf:type owl:Class ;
+                       rdfs:subClassOf :Data_Analysis .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Particle_Physics
+:Particle_Physics rdf:type owl:Class ;
+                  owl:equivalentClass :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Particle_detection_for_tracking_in_particle_physics_experiments
+:Particle_detection_for_tracking_in_particle_physics_experiments rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Particle_physics
+:Particle_physics rdf:type owl:Class ;
+                  rdfs:subClassOf :Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Particle_physics_at_the_highest_energies
+:Particle_physics_at_the_highest_energies rdf:type owl:Class ;
+                                          rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Photonics
+:Photonics rdf:type owl:Class ;
+           rdfs:subClassOf :Quantum_Optics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Phänomenologie_der_Elementarteilchen
+:Phänomenologie_der_Elementarteilchen rdf:type owl:Class ;
+                                      rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Polarization_measurements_for_photonuclear_reactions___and_complete_experiments
+:Polarization_measurements_for_photonuclear_reactions___and_complete_experiments rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Protein_-_DNA_or_RNA_interaction
+:Protein_-_DNA_or_RNA_interaction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Pulsars
+:Pulsars rdf:type owl:Class ;
+         rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantenchromodynamik
+:Quantenchromodynamik rdf:type owl:Class ;
+                      rdfs:subClassOf :Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantenfeldtheorie
+:Quantenfeldtheorie rdf:type owl:Class ;
+                    rdfs:subClassOf :Theory .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_Chemical_Analyses_of_Novel_Bonds
+:Quantum_Chemical_Analyses_of_Novel_Bonds rdf:type owl:Class ;
+                                          rdfs:subClassOf :Quantum_chemistry .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_Computing
+:Quantum_Computing rdf:type owl:Class ;
+                   rdfs:subClassOf :Computer_Science ,
+                                   :Quantum_Mechanics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_Information_Science
+:Quantum_Information_Science rdf:type owl:Class ;
+                             rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_Mechanics
+:Quantum_Mechanics rdf:type owl:Class ;
+                   rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_Optics
+:Quantum_Optics rdf:type owl:Class ;
+                rdfs:subClassOf :Optics ,
+                                :Quantum_Mechanics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_chemistry
+:Quantum_chemistry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_cluster_equilibrium_mode
+:Quantum_cluster_equilibrium_mode rdf:type owl:Class ;
+                                  rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_computing
+:Quantum_computing rdf:type owl:Class ;
+                   rdfs:subClassOf :Computer_Science ,
+                                   :Quantum_Mechanics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_gases_of_light_and_matter
+:Quantum_gases_of_light_and_matter rdf:type owl:Class ;
+                                   rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_many-body_systems
+:Quantum_many-body_systems rdf:type owl:Class ;
+                           rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_optics
+:Quantum_optics rdf:type owl:Class ;
+                rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_science
+:Quantum_science rdf:type owl:Class ;
+                 rdfs:subClassOf :Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Quantum_technology
+:Quantum_technology rdf:type owl:Class ;
+                    rdfs:subClassOf :Quantum_science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/RNA_biology
+:RNA_biology rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radiation_Detectors_and_Micro_Electronics
+:Radiation_Detectors_and_Micro_Electronics rdf:type owl:Class ;
+                                           rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radiation_detectors
+:Radiation_detectors rdf:type owl:Class ;
+                     rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radiation_hard_pixel_detectors
+:Radiation_hard_pixel_detectors rdf:type owl:Class ;
+                                rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radicals
+:Radicals rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radio_astronomy
+:Radio_astronomy rdf:type owl:Class ;
+                 owl:equivalentClass :Radioastronomy ;
+                 rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Radioastronomy
+:Radioastronomy rdf:type owl:Class ;
+                rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Reaction_Mechanisms
+:Reaction_Mechanisms rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Satellite_geodesy
+:Satellite_geodesy rdf:type owl:Class ;
+                   rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Scanning_probe_microscopy
+:Scanning_probe_microscopy rdf:type owl:Class ;
+                           rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Sea_level_and_climate
+:Sea_level_and_climate rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Search_for_dark_photons_and_heavy_neutral_leptons_at_the_LHC
+:Search_for_dark_photons_and_heavy_neutral_leptons_at_the_LHC rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Search_for_new_physics_in_semileptonic_decays
+:Search_for_new_physics_in_semileptonic_decays rdf:type owl:Class ;
+                                               rdfs:subClassOf :Flavor_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Self-Assembly_Processes
+:Self-Assembly_Processes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Self-assembled_monolayers
+:Self-assembled_monolayers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Semiconductor_pixel_detectors
+:Semiconductor_pixel_detectors rdf:type owl:Class ;
+                               rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Shape-persistent_molecules
+:Shape-persistent_molecules rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Software_development
+:Software_development rdf:type owl:Class ;
+                      rdfs:subClassOf :Computer_Science .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Solvents_and_solvent_effects
+:Solvents_and_solvent_effects rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Spectroscopy
+:Spectroscopy rdf:type owl:Class ;
+              rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Stability_and_metabolism_studies
+:Stability_and_metabolism_studies rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Star_Formation
+:Star_Formation rdf:type owl:Class ;
+                rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Star_formation_quenching
+:Star_formation_quenching rdf:type owl:Class ;
+                          rdfs:subClassOf :Star_Formation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Statistical_methods
+:Statistical_methods rdf:type owl:Class ;
+                     rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Stellar_dynamics
+:Stellar_dynamics rdf:type owl:Class ;
+                  rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Stellar_populations
+:Stellar_populations rdf:type owl:Class ;
+                     rdfs:subClassOf :Cosmology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Strangeness_photoproduction
+:Strangeness_photoproduction rdf:type owl:Class ;
+                             rdfs:subClassOf :Particle_Production .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Strong_interaction
+:Strong_interaction rdf:type owl:Class ;
+                    rdfs:subClassOf :Particle_physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Structural_biology
+:Structural_biology rdf:type owl:Class ;
+                    rdfs:subClassOf :Biology .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Structure-Dynamics-Function_Relationships
+:Structure-Dynamics-Function_Relationships rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Structure-activity_relationships
+:Structure-activity_relationships rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Structure_Elucidation
+:Structure_Elucidation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Study_of_collider_neutrinos
+:Study_of_collider_neutrinos rdf:type owl:Class ;
+                             rdfs:subClassOf :Experimental_High_Energy_Particle_Physics .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Super-resolution_microscopy
+:Super-resolution_microscopy rdf:type owl:Class ;
+                             rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Supermassive_black_holes
+:Supermassive_black_holes rdf:type owl:Class ;
+                          rdfs:subClassOf :Astronomy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Supramolecular_Chemistry
+:Supramolecular_Chemistry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Supramolecular_chemistry_and_molecular_self-assembly_of_metallo-supramolecular_coordination_complexes_and_cages
+:Supramolecular_chemistry_and_molecular_self-assembly_of_metallo-supramolecular_coordination_complexes_and_cages rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Surface_Science
+:Surface_Science rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Sustainability
+:Sustainability rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Synthetic_method_development
+:Synthetic_method_development rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Targeted_therapies
+:Targeted_therapies rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Terrestrial_water_cycle
+:Terrestrial_water_cycle rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/The_Chemistry_of_Transition_Metal-Tetrel_Triple_bonds
+:The_Chemistry_of_Transition_Metal-Tetrel_Triple_bonds rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/The_LHCb_Mighy_Tracker
+:The_LHCb_Mighy_Tracker rdf:type owl:Class ;
+                        rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Theoretical_Elementary_Particle_Physics
+:Theoretical_Elementary_Particle_Physics rdf:type owl:Class ;
+                                         rdfs:subClassOf :Theory .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Theoretical_quantum_many-body_physics
+:Theoretical_quantum_many-body_physics rdf:type owl:Class ;
+                                       rdfs:subClassOf :Theory .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Theoretical_spectroscopy
+:Theoretical_spectroscopy rdf:type owl:Class ;
+                          rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Thermalization
+:Thermalization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Thermochemistry
+:Thermochemistry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Thermodynamic_and_kinetic_investigation_of_self-assembled_dynamic_systems
+:Thermodynamic_and_kinetic_investigation_of_self-assembled_dynamic_systems rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Thermodynamic_investigation_of_host-guest_equilibria
+:Thermodynamic_investigation_of_host-guest_equilibria rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Thermodynamics
+:Thermodynamics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Time_projection_chambers
+:Time_projection_chambers rdf:type owl:Class ;
+                          rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Titanium
+:Titanium rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Total_synthesis_of_complex_natural_products
+:Total_synthesis_of_complex_natural_products rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ultra-fast_and_high_resolution_particle_detecting_system
+:Ultra-fast_and_high_resolution_particle_detecting_system rdf:type owl:Class ;
+                                                          rdfs:subClassOf :Detectors .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Ultracold_atoms
+:Ultracold_atoms rdf:type owl:Class ;
+                 rdfs:subClassOf :Phenomenon .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Variational_Inference
+:Variational_Inference rdf:type owl:Class ;
+                       rdfs:subClassOf :Statistical_methods .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Vibrational_Spectroscopy
+:Vibrational_Spectroscopy rdf:type owl:Class ;
+                          rdfs:subClassOf :Spectroscopy .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Viruses_assembly
+:Viruses_assembly rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/X-ray_astronomy
+:X-ray_astronomy rdf:type owl:Class ;
+                 rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/X-ray_detection_and_imaging_detectors
+:X-ray_detection_and_imaging_detectors rdf:type owl:Class ;
+                                       rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/coherent_photoproduction_off_the_deuteron
+:coherent_photoproduction_off_the_deuteron rdf:type owl:Class ;
+                                           rdfs:subClassOf :Particle_Production .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/extracellular_vesicles
+:extracellular_vesicles rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/innate_immunity
+:innate_immunity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/microelectronics
+:microelectronics rdf:type owl:Class ;
+                  rdfs:subClassOf :Instrumentation .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/photocatalysis
+:photocatalysis rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/pi-Conjugated_oligomers_and_polymers
+:pi-Conjugated_oligomers_and_polymers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/transition_metal_catalysis
+:transition_metal_catalysis rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/virology
+:virology rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Experimental_hadron_physics_with_electromagnetic_and_hadronic_probes:_hadron_structure_and_spectroscopy
+:Experimental_hadron_physics_with_electromagnetic_and_hadronic_probes:_hadron_structure_and_spectroscopy rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf :Strong_interaction .
+
+
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Physics_beyond_the_Standard_Model_with_hadron_physics_methods:_search_for_Dark_Photons
+:Physics_beyond_the_Standard_Model_with_hadron_physics_methods:_search_for_Dark_Photons rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf :Beyond_Standard_Model_Phenomenology .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
