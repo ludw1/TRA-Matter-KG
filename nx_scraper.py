@@ -13,14 +13,14 @@ from visual import GraphVisualization
 # customization
 
 url = r"https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/mitgliederverzeichnis" # TRA matter url
-onto_path = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\TRAOnto02.ttl" # location of the ontology file
+onto_path = r" " # location of the ontology file
 person_clr = "blue" 
 affil_clr = "green"
 topic_clr = "orange"
-graph_output_directory = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\graph.html" # full graph
-ngraph_output_directory = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\ngraph.html" # neighbour graph
+graph_output_directory = r" " # full graph directory
+ngraph_output_directory = r" " # neighbour graph directory
 complete_ngraph = True # If true: only the full graph will be produced, if false: only the pngs of the small graphs will be produced
-png_folder = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\png" # folder where all pngs will be saved
+png_folder = r" " # folder where all pngs will be saved, please end it with a trailing "\" or "/"
 link_affil = False # WARNING!!! Will make the graph extremely large and slow!!! Use at your own discretion
 usr_ag = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"} # just for safety
 
@@ -213,7 +213,8 @@ for node in persons:
         color_map = [a for a in nx.get_node_attributes(J,"color").values()]
         vis = GraphVisualization(J, pos, node_text = label_dict, node_text_position= 'top center', node_size= 20,node_color=color_map)
         fig = vis.create_figure(showlabel=True)
-        fig.write_image(fr"{png_folder}\{node.split("\n")[0]}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
+        filename = node.split("\n")[0]
+        fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
 if complete_ngraph:
     J = nx.convert_node_labels_to_integers(J)
     net2 = Network(
