@@ -16,6 +16,7 @@ class GraphVisualization:
         G: nx.Graph,
         pos: Dict[Vertex, Union[Tuple[Num, Num], Tuple[Num, Num, Num]]],
         node_text: Union[Dict[Vertex, str], Callable] = None,
+        node_hover: Union[Dict[Vertex, str], Callable] = None,
         node_text_position: Union[Dict[Vertex, str], Callable, str] = None,
         node_text_font_color: Union[Dict[Vertex, str], Callable, str] = None,
         node_text_font_family: Union[Dict[Vertex, str], Callable, str] = None,
@@ -51,7 +52,7 @@ class GraphVisualization:
             node_opacity=0.8,
             edge_width=4 if self.is_3d else 2,
             edge_color='#808080',
-            edge_opacity=0.8,
+            edge_opacity=0.5,
         )
 
         # save settings
@@ -70,6 +71,7 @@ class GraphVisualization:
         self.edge_width = edge_width
         self.edge_color = edge_color
         self.edge_opacity = edge_opacity
+        self.node_hover = node_hover
 
     def _get_edge_traces(self) -> List[Union[go.Scatter, go.Scatter3d]]:
         # group all edges by (color, width)
@@ -139,6 +141,7 @@ class GraphVisualization:
             ),
             textposition=self._get_setting('node_text_position'),
             opacity=self._get_setting('node_opacity'),
+            hovertemplate = self._get_setting('node_hover')
         )
 
         trace = go.Scatter3d(z=z, **params) if self.is_3d else go.Scatter(**params)
@@ -199,8 +202,8 @@ class GraphVisualization:
             paper_bgcolor='rgba(255,255,255,255)',  # white
             plot_bgcolor='rgba(0,0,0,0)',  # transparent
             autosize=True,
-            height=4000,
-            width=8500 if showscale else 2500,
+            height=1000,
+            width=1000 if showscale else 3000,
             title='',
             titlefont_size=16,
             showlegend=False,
