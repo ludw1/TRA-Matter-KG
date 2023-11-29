@@ -48,8 +48,8 @@ def person_scr(url): # scrape webpage for personal information
     website = website.find('a')['href'] if website and website.find('a') else ""
     affil = affil.find('ul').text.strip() if affil and affil.find('ul') else ""
     focus = focus.find('ul').text.strip() if focus and focus.find('ul') else ""
-
     return name,email,website,affil,focus
+
 def urlopen(url): # go through the main tra matter page and scrape all person webpages
     pers_data = []
     request = urllib.request.Request(url,headers=usr_ag)
@@ -192,16 +192,6 @@ def get_neigh(G,node,n_list): # get all neighbours of the node
     for neigh in G[node]:
         n_list.append(neigh)
     return n_list
-
-def rec_neigh(n_list,label_dict,persons): # recursive function to get all neighbours of a node
-    if len(n_list) == 0:
-        return label_dict
-    else:
-        node = n_list.pop()
-        n_list = []
-        get_neigh(G,node,n_list)
-        neigh_graph(J,node,n_list,label_dict,persons)
-        return rec_neigh(n_list,label_dict,persons)
 
 persons = []
 for node in nx.get_node_attributes(G,"color",default="None").items():
