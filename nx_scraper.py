@@ -13,16 +13,18 @@ from visual import GraphVisualization
 # customization
 
 url = r"https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/mitgliederverzeichnis" # TRA matter url
-onto_path = r" " # location of the ontology file
+onto_path = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\TRAOnto02.ttl" # location of the ontology file
 person_clr = "blue" 
 affil_clr = "green"
 topic_clr = "orange"
-graph_output_directory = r" " # full graph directory
-ngraph_output_directory = r" " # neighbour graph directory
+graph_output_directory = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\graph.html" # full graph directory
+ngraph_output_directory = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\ngraph.html" # neighbour graph directory
 complete_ngraph = False # If true: only the full graph will be produced, if false: only the pngs of the small graphs will be produced
-png_folder = r" " # folder where all pngs will be saved, please end it with a trailing "\\" or "/"
+png_folder = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\output\png\\" # folder where all pngs will be saved, please end it with a trailing "\\" or "/"
 link_affil = False # WARNING!!! Will make the graph extremely large and slow!!! Use at your own discretion
 usr_ag = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"} # just for safety
+old_neigh = False # if true: the old neighbour graph code will be used, if false: the new one will be used
+max_persons = 5 # maximum number of persons in a neighbour graph
 
 def person_scr(url): # scrape webpage for personal information
     request = urllib.request.Request(url,headers=usr_ag)
@@ -63,7 +65,7 @@ def urlopen(url): # go through the main tra matter page and scrape all person we
         if url is not None:
             pers_data.append(person_scr(url['href']))
         print(len(pers_data))
-        # if len(pers_data) > 1:
+        # if len(pers_data) > 5:
         #     break
     return pers_data
 
@@ -191,44 +193,79 @@ def get_neigh(G,node,n_list): # get all neighbours of the node
         n_list.append(neigh)
     return n_list
 
+def rec_neigh(n_list,label_dict,persons): # recursive function to get all neighbours of a node
+    if len(n_list) == 0:
+        return label_dict
+    else:
+        node = n_list.pop()
+        n_list = []
+        get_neigh(G,node,n_list)
+        neigh_graph(J,node,n_list,label_dict,persons)
+        return rec_neigh(n_list,label_dict,persons)
+
 persons = []
-for node in nx.get_node_attributes(M,"color",default="None").items():
+for node in nx.get_node_attributes(G,"color",default="None").items():
     if node[1] == "blue": # all persons have color blue
         persons.append(node[0])
-
-J = nx.Graph()
-for node in persons:
-    if not complete_ngraph:
-        J = nx.Graph() # individual neighbour graph
-    label_dict = {}
-    n_list = []
-    get_neigh(G,node,n_list) 
-    neigh_graph(J,node,n_list,label_dict,persons) # link all immediate nodes to the person
-    for n in n_list:
+# old neighbour graph code
+if old_neigh:
+    J = nx.Graph()
+    for node in persons:
+        if not complete_ngraph:
+            J = nx.Graph() # individual neighbour graph
+        label_dict = {}
         n_list = []
-        get_neigh(G,n,n_list)
-        neigh_graph(J,n,n_list,label_dict,persons)
-    if not complete_ngraph:
+        get_neigh(G,node,n_list) 
+        neigh_graph(J,node,n_list,label_dict,persons) # link all immediate nodes to the person
+        for n in n_list:
+            n_list = []
+            get_neigh(G,n,n_list)
+            neigh_graph(J,n,n_list,label_dict,persons)
+        if not complete_ngraph:
+            pos = nx.spring_layout(J)
+            color_map = [a for a in nx.get_node_attributes(J,"color").values()]
+            vis = GraphVisualization(J, pos, node_text = label_dict, node_text_position= 'top center', node_size= 20,node_color=color_map)
+            fig = vis.create_figure(showlabel=True)
+            filename = node.split("\n")[0]
+            fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
+    if complete_ngraph:
+        J = nx.convert_node_labels_to_integers(J)
+        net2 = Network(
+            notebook=False,
+            # bgcolor="#1a1a1a",
+            cdn_resources="remote",
+            height="900px",
+            width="100%",
+            select_menu=True,
+            # font_color="#cccccc",
+            filter_menu=False,
+        )
+
+        net2.from_nx(J)
+        net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
+        net2.show(ngraph_output_directory, notebook=False)
+else: # new neighbour graph code that uses the ego graph function and cuts off when a certain number of persons is reached
+    for node in persons:
+        r = 1
+        while True:
+            pers_contained = 0
+            if G.degree[node] == 0: # this is to catch people that have not entered any topics
+                break
+            J = nx.ego_graph(G,node, radius = r) # generate graph with radius r around node
+            for node_p in J.nodes(): # go through all nodes in the graph and count how many persons are in it
+                if node_p in persons:
+                    pers_contained += 1
+            if pers_contained > max_persons: # if we exceed the maximum number of persons, break
+                break
+            else:
+                r += 1
+            if r > 10: # This is to catch people that are not connected to the ontology
+                print("Radius exceeded",node)
+                break
+        # generate the graph
         pos = nx.spring_layout(J)
         color_map = [a for a in nx.get_node_attributes(J,"color").values()]
-        vis = GraphVisualization(J, pos, node_text = label_dict, node_text_position= 'top center', node_size= 20,node_color=color_map)
+        vis = GraphVisualization(J, pos, node_text_position= 'top center', node_size= 20,node_color=color_map)
         fig = vis.create_figure(showlabel=True)
         filename = node.split("\n")[0]
-        fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
-if complete_ngraph:
-    J = nx.convert_node_labels_to_integers(J)
-    net2 = Network(
-        notebook=False,
-        # bgcolor="#1a1a1a",
-        cdn_resources="remote",
-        height="900px",
-        width="100%",
-        select_menu=True,
-        # font_color="#cccccc",
-        filter_menu=False,
-    )
-
-    net2.from_nx(J)
-    net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
-    net2.show(ngraph_output_directory, notebook=False)
-
+        fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000)
