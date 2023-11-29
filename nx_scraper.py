@@ -228,7 +228,31 @@ if complete_ngraph:
         filter_menu=False,
     )
 
-    net2.from_nx(J)
-    net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
-    net2.show(ngraph_output_directory, notebook=False)
-
+        net2.from_nx(J)
+        net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
+        net2.show(ngraph_output_directory, notebook=False)
+else: # new neighbour graph code that uses the ego graph function and cuts off when a certain number of persons is reached
+    for node in persons:
+        r = 1
+        while True:
+            J = nx.ego_graph(G,node, radius = r) # generate graph with radius r around node
+            pers_contained = 0
+            if G.degree[node] == 0: # this is to catch people that have not entered any topics
+                break
+            for node_p in J.nodes(): # go through all nodes in the graph and count how many persons are in it
+                if node_p in persons:
+                    pers_contained += 1
+            if pers_contained > max_persons: # if we exceed the maximum number of persons, break
+                break
+            else:
+                r += 1
+            if r > 10: # This is to catch people that are not connected to the ontology
+                print("Radius exceeded",node)
+                break
+        # generate the graph
+        pos = nx.spring_layout(J)
+        color_map = [a for a in nx.get_node_attributes(J,"color").values()]
+        vis = GraphVisualization(J, pos, node_text_position= 'top center', node_size= 20,node_color=color_map)
+        fig = vis.create_figure(showlabel=True)
+        filename = node.split("\n")[0]
+        fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000)
