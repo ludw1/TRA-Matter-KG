@@ -1,73 +1,25 @@
-
-from bs4 import BeautifulSoup # to analyze the htmls
-import urllib.request # scraping 
-import urllib.error
 import networkx as nx # graph creation
 from rdflib import Graph as RDFGraph # creating a nx graph from the ontology
 from rdflib.extras.external_graph_libs import rdflib_to_networkx_graph
 from pyvis.network import Network # visualization
 import uuid
 from visual import GraphVisualization
+from ruamel.yaml import YAML # to import the yaml file
 
+onto_path = r"" # location of the ontology file
+graph_output_directory = r"" # full graph directory
+ngraph_output_directory = r"" # neighbour graph directory
+png_folder = r"" # folder where all pngs will be saved, please end it with a trailing "\\" or "/"
+yaml_file = r"" # location of the yaml file
 
-# customization
-
-url = r"https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/mitgliederverzeichnis" # TRA matter url
-onto_path = r" " # location of the ontology file
-person_clr = "blue" 
-affil_clr = "green"
-topic_clr = "orange"
-graph_output_directory = r" " # full graph directory
-ngraph_output_directory = r" " # neighbour graph directory
 complete_ngraph = False # If true: only the full graph will be produced, if false: only the pngs of the small graphs will be produced
-png_folder = r" " # folder where all pngs will be saved, please end it with a trailing "\\" or "/"
 link_affil = False # WARNING!!! Will make the graph extremely large and slow!!! Use at your own discretion
-usr_ag = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"} # just for safety
 old_neigh = False # if true: the old neighbour graph code will be used, if false: the new one will be used
 max_persons = 5 # maximum number of persons in a neighbour graph
 
-def person_scr(url): # scrape webpage for personal information
-    request = urllib.request.Request(url,headers=usr_ag)
-    try:
-        with urllib.request.urlopen(request) as response:
-            body = response.read()
-    except urllib.error.URLError as e:
-        print(f"Error accessing {url}: {e}")
-        return None
-    parsed_html = BeautifulSoup(body,"html.parser")
-    # find all elements on the website
-    # this is tied to the structure of the webpage, so subject to change
-    name = parsed_html.body.find('div', class_="col-md-12 contact-name")
-    email = parsed_html.body.find('div', class_="col-flex-auto contact-email")
-    website = parsed_html.body.find('div', class_="col-flex-auto contact-website")
-    affil = parsed_html.body.find('div', class_="col-lg-6 affiliations")
-    focus = parsed_html.body.find('div', class_="col-lg-6 research_focus")
-    # convert html strings to readable if they exist
-    name = name.text.strip() if name else ""
-    email = email.text.strip() if email else ""
-    website = website.find('a')['href'] if website and website.find('a') else ""
-    affil = affil.find('ul').text.strip() if affil and affil.find('ul') else ""
-    focus = focus.find('ul').text.strip() if focus and focus.find('ul') else ""
-    return name,email,website,affil,focus
-
-def urlopen(url): # go through the main tra matter page and scrape all person webpages
-    pers_data = []
-    request = urllib.request.Request(url,headers=usr_ag)
-    try:
-        with urllib.request.urlopen(request) as response:
-            body = response.read()
-    except urllib.error.URLError as e:
-        print(f"Error accessing {url}: {e}")
-        return None
-    parsed_html = BeautifulSoup(body,"html.parser")
-    for div in (parsed_html.body.find_all('div', attrs = {"class":"table-cell details"})):
-        url = div.find('a')
-        if url is not None:
-            pers_data.append(person_scr(url['href']))
-        print(len(pers_data))
-        # if len(pers_data) > 5:
-        #     break
-    return pers_data
+person_clr = "blue" 
+affil_clr = "green"
+topic_clr = "orange"
 
 def rdf_to_nx(ontofile): # turns the ontology into a nx graph
     rg = RDFGraph()
@@ -83,7 +35,17 @@ def rdf_to_nx(ontofile): # turns the ontology into a nx graph
     return G
 
 G = rdf_to_nx(onto_path)
-data = urlopen(url)
+yaml = YAML(typ='safe')
+yaml.default_flow_style = False
+with open(yaml_file,"r",encoding="utf-8") as f:
+    data_yaml = yaml.load(f)
+    data = []
+    for name,info in data_yaml.items():
+        email = info["email"]
+        website = info["website"]
+        affil = "\n".join(info["affil"])
+        focus = "\n".join(info["focus"])
+        data.append([name,email,website,affil,focus])
 for name, email, website, affil, focus in data:
     G.add_node(name, color = person_clr, title = str([email,website]))
     for f in focus.split("\n"): # link persons to focuses defined in the ontology
@@ -94,6 +56,7 @@ for name, email, website, affil, focus in data:
             if a != "":
                 G.add_node(a, color = affil_clr, title=a)
                 G.add_edge(name,a)
+                
 # remove nodes that are just for classification in the ontology
 G.remove_node("Class")
 G.remove_node("Phenomenology")

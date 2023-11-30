@@ -5,3 +5,4 @@ pyvis==0.3.2
 rdflib==7.0.0
 kaleido==0.1.0.post1
 numpy==1.26.0
+ruamel.base==1.0.0

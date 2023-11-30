@@ -1,0 +1,826 @@
+? "Dr. Andreas Hansen\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: hansen@thch.uni-bonn.de
+  focus:
+  - (Local) coupled cluster methods
+  - Computational chemistry
+  - Multilevel workflows
+  - Benchmarking and high performance computing
+  website: https://www.chemie.uni-bonn.de/grimme/de
+Dr. Dario Colombo:
+  affil:
+  - Argelander Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: dcolombo@uni-bonn.de
+  focus:
+  - Interstellar medium
+  - Milky Way structure
+  - Star formation quenching
+  - Galaxy evolution
+  website: https://dcolombo.github.io/
+Dr. Dinar Abdullin:
+  affil:
+  - Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: abdullin@pc.uni-bonn.de
+  focus:
+  - Electron Paramagnetic Resonance Spectroscopy
+  - Metalloproteins
+  - Structural biology
+  - Software development
+  website: http://www.schiemann.uni-bonn.de/?team=dr-dinar-abdullin-2
+Dr. Fabian Hügging:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: huegging@uni-bonn.de
+  focus:
+  - Particle detection for tracking in particle physics experiments
+  - Ultra-fast and high resolution particle detecting system
+  - Semiconductor pixel detectors
+  - X-ray detection and imaging detectors
+  website: https://www.hep1.physik.uni-bonn.de/
+Dr. Florian Pacaud:
+  affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: fpacaud@astro.uni-bonn.de
+  focus:
+  - Cosmology
+  - X-ray astronomy
+  - Galaxy clusters
+  - Statistical methods
+  website: https://astro.uni-bonn.de/~fpacaud/
+Dr. Frank Vewinger:
+  affil:
+  - Institut für Angewandte Physik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: vewinger@iap.uni-bonn.de
+  focus:
+  - Bose-Einstein condensation of photons
+  - Coherent light-matter interaction
+  - High-pressure spectroscopy
+  website: https://www.iap.uni-bonn.de/de
+Dr. Jochen Kaminski:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: kaminski@physik.uni-bonn.de
+  focus:
+  - Gas-filled particle detectors
+  - Time projection chambers
+  - GridPix-Decectors
+  - Neutron detectors
+  website: ''
+Dr. Julian Schmitt:
+  affil:
+  - Institut für Angewandte Physik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: schmitt@iap.uni-bonn.de
+  focus:
+  - Quantum optics
+  - Photonics
+  - Quantum gases of light and matter
+  - Thermodynamics
+  website: https://www.qfl.uni-bonn.de/en
+Dr. Katharina Scherer:
+  affil:
+  - Institut für Mikrobiologie und Biotechnologie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: k.scherer@uni-bonn.de
+  focus:
+  - Viruses assembly
+  - Dynamics of viral infection
+  - Fluorescence microscopy
+  website: https://www.ifmb.uni-bonn.de/de/forschung/ag-scherer
+Dr. Kaustuv Basu:
+  affil:
+  - Argelander Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: kbasu@astro.uni-bonn.de
+  focus:
+  - Cosmology
+  - Cosmic Microwave Background
+  - Galaxy clusters
+  - Microwave instrumentation
+  website: https://astro.uni-bonn.de/~kbasu/
+Dr. Kim Andrea Nicoli:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - TRA Matter
+  email: knicoli@uni-bonn.de
+  focus:
+  - Machine Learning
+  - Variational Inference
+  - Lattice Field Theory
+  - Quantum Computing
+  website: https://scholar.google.com/citations?user=0GzYud8AAAAJ&hl=en
+Dr. Klaas Padeken:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: klaas.padeken@uni-bonn.de
+  focus:
+  - Large experiment data acquisition
+  - HV-CMOS sensors
+  - Radiation hard pixel detectors
+  - The LHCb Mighy Tracker
+  website: ''
+Dr. Larissa von Krbek:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: larissa.vonkrbek@uni-bonn.de
+  focus:
+  - Supramolecular chemistry and molecular self-assembly of metallo-supramolecular
+    coordination complexes and cages
+  - Photoswitsches, their synthesis, investigation, and their use in supramolecular
+    architectures
+  - Thermodynamic and kinetic investigation of self-assembled dynamic systems
+  - Thermodynamic investigation of host-guest equilibria
+  website: ''
+Dr. Luke Wylie:
+  affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: wylie@thch.uni-bonn.de
+  focus:
+  - Ionic Liquids
+  - Computational Chemistry
+  - Thermodynamics
+  - Electrochemistry
+  website: https://www.chemie.uni-bonn.de/kirchner/de/group
+Dr. Manuel Drees:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: drees@th.physik.uni-bonn.de
+  focus:
+  - Dark Matter
+  - LHC Physics
+  - Cosmological inflation
+  website: http://www.th.physik.uni-bonn.de/Groups/drees/
+? "Dr. Michael Lupberger\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: lupberger@physik.uni-bonn.de
+  focus:
+  - Gaseous Detectors
+  - Fast Timing Detectors
+  - Data Acquisition Systems
+  - Maschine Learing on FPGA
+  website: ''
+Dr. Stefan-Sven Jester:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: stefan.jester@uni-bonn.de
+  focus:
+  - Self-assembled monolayers
+  - Scanning probe microscopy
+  - Solid/liquid interface
+  - Shape-persistent molecules
+  website: https://www.jester.uni-bonn.de
+Dr. Thomas Jude:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: jude@physik.uni-bonn.de
+  focus:
+  - Strangeness photoproduction
+  - coherent photoproduction off the deuteron
+  website: ''
+Dr. rer. nat. Ali El-Tayeb:
+  affil:
+  - Pharmazeutisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: a.el-tayeb@uni-bonn.de
+  focus:
+  - Chemical synthesis and purification of bioactive molecules
+  - Development of in vitro assays
+  - Development of radioligands, fluorescence ligands
+  - Stability and metabolism studies
+  website: http://mueller-group.pharma.uni-bonn.de
+Dr. rer. nat. Farah Noreen Afzal:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: afzal@hiskp.uni-bonn.de
+  focus:
+  - Strong interaction
+  - Baryon spectroscopy
+  - Excitation spectrum of nucleons
+  website: ''
+Dr. rer. nat. Werner Reckien:
+  affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: reckien@thch.uni-bonn.de
+  focus:
+  - Hydrogen Bonds
+  - Vibrational Spectroscopy
+  - Supramolecular Chemistry
+  website: ''
+Dr. rer. nat. Yannick Wunderlich:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: wunderlich@hiskp.uni-bonn.de
+  focus:
+  - Hadron spectroscopy
+  - Amplitude analysis and partial-wave analysis
+  - Polarization measurements for photonuclear reactions   and complete experiments
+  website: ''
+Jun.-Prof. Andrina Nicola:
+  affil:
+  - Argelander Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: anicola@uni-bonn.de
+  focus:
+  - Cosmology
+  - Large-scale structure of the Universe
+  - Cosmological probe combination
+  website: ''
+Jun.-Prof. Lena Funcke:
+  affil:
+  - Clausius-Professor of TRA Matter
+  - HISKP
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: lfuncke@uni-bonn.de
+  focus:
+  - Particle physics
+  - Lattice field theory
+  - Quantum computing
+  - Machine learning
+  website: https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/clausius-professur-1
+Jun.-Prof. Stephanie Jung:
+  affil:
+  - Medizinische Fakultät
+  - Institut für Kardiovaskuläre Immunologie
+  email: sjung@uni-bonn.de
+  focus:
+  - virology
+  - innate immunity
+  - extracellular vesicles
+  - RNA biology
+  website: https://www.ukbonn.de/iki/research/
+Junior Prof. Ala Bunescu:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: ala.bunescu@uni-bonn.de
+  focus:
+  - C-H functionalization
+  - transition metal catalysis
+  - photocatalysis
+  website: https://www.bunescu.de/
+Junior Prof. Dr. Annika Thiel:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: thiel@hiskp.uni-bonn.de
+  focus:
+  - Meson Spectroscopy
+  - Baryon Spectroscopy
+  - Partial Wave Analysis
+  - Exotic States
+  website: https://agthiel.hiskp.uni-bonn.de
+Junior Prof. Dr. Patrycja Kielb:
+  affil:
+  - Argelander-Professor of TRA Matter
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: kielb@uni-bonn.de
+  focus:
+  - Electron transfer via coupled Tyr/Trp networks in metalloenzymes.
+  - Unraveling the molecular mechanism of O2-converting copper-containing enzymes.
+  - Rational design of artificial copper/heme-containing biocatalysts.
+  - AI applications
+  - UV/Vis Raman spectro-electrochemistry – method development.
+  website: https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/argelander-professur
+? "Junior Prof. Simon Stellmer\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  - EXC ML4Q
+  email: stellmer@uni-bonn.de
+  focus:
+  - ''
+  website: https://www.quantum-metrology.uni-bonn.de/
+PD Dr. Margret Bülow:
+  affil:
+  - Life and Medical Sciences Institute (LIMES)
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: mbuelow@uni-bonn.de
+  focus:
+  - Membrane contact sites in neurons
+  - In vivo modelling and imaging in Drosophila melanogaster brains
+  - Organelle dynamics
+  - Super-resolution microscopy
+  website: https://www.limes-institut-bonn.de/forschung/arbeitsgruppen/unit-1/abteilung-buelow/abt-dr-buelow-startseite/?no_cache=1
+Priv. Doz. Dr. Marianne Engeser:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: Marianne.Engeser@uni-bonn.de
+  focus:
+  - Mass Spectrometry
+  - Detection of reactive Intermediates
+  - Reaction Mechanisms
+  - Structure Elucidation
+  website: https://www.chemiebn.uni-bonn.de/oc/forschung/arbeitsgruppen/ak_en/
+Priv. Doz. Dr. Philip Bechtle:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: bechtle@physik.uni-bonn.de
+  focus:
+  - ''
+  website: ''
+Prof. Alexander Filippou:
+  affil:
+  - Institut für Anorganische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: filippou@uni-bonn.de
+  focus:
+  - The Chemistry of Transition Metal-Tetrel Triple bonds
+  - Molecular Chemistry of Silicon in Low Oxidation States
+  - Quantum Chemical Analyses of Novel Bonds
+  website: https://www.filippou.chemie.uni-bonn.de/
+Prof. Andreas Gansäuer:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: andreas.gansaeuer@uni-bonn.de
+  focus:
+  - Catalysis
+  - Electron Transfer
+  - Radicals
+  - Titanium
+  website: ''
+Prof. Claude Duhr:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: cduhr@uni-bonn.de
+  focus:
+  - Quantenchromodynamik
+  - Quantenfeldtheorie
+  - Phänomenologie der Elementarteilchen
+  website: ''
+? "Prof. Connie Lu\n                      \nTRA Matter Speaker"
+: affil:
+  - Institute of Inorganic Chemistry
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: clu@uni-bonn.de
+  focus:
+  - Metal-metal bonding
+  - Ligand design
+  - Catalysis
+  - Energy and sustainability
+  website: https://www.chemie.uni-bonn.de/lu/de
+? "Prof. Corinna Kollath\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: Corinna.kollath@uni-bonn.de
+  focus:
+  - ''
+  website: https://www.theory.uni-bonn.de/
+? "Prof. Dr. Arne Lützen\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: arne.luetzen@uni-bonn.de
+  focus:
+  - Organic Synthesis
+  - Supramolecular Chemistry
+  - Self-Assembly Processes
+  - Organic Electronics
+  website: ''
+Prof. Dr. Barbara Kirchner:
+  affil:
+  - Clausius Institut für Physikalische und Theoretische Chemie
+  - Mulliken Center for Theoretical Chemistry
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: kirchner@thch.uni-bonn.de
+  focus:
+  - Quantum cluster equilibrium mode
+  - Ab initio and traditional molecular dynamics simulations
+  - Solvents and solvent effects
+  - Development of tool for analyzing and visualizing trajectories
+  website: https://www.chemie.uni-bonn.de/kirchner/de
+? "Prof. Dr. Carsten Urbach\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: urbach@hiskp.uni-bonn.de
+  focus:
+  - ''
+  website: https://www.itkp.uni-bonn.de/~urbach/
+Prof. Dr. Cristiano Porciani:
+  affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: cporcian@uni-bonn.de
+  focus:
+  - ''
+  website: https://astro.uni-bonn.de/~porciani/lss/webpage/members.html
+Prof. Dr. David Luitz:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: david.luitz@uni-bonn.de
+  focus:
+  - Quantum many-body systems
+  - Nonequilibrium phenomena
+  - Thermalization
+  - Quantum computing
+  website: http://dluitz.github.io/
+Prof. Dr. Dirk Menche:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: dirk.menche@uni-bonn.de
+  focus:
+  - Total synthesis of complex natural products
+  - Synthetic method development
+  - Structure-activity relationships
+  website: https://www.menche.uni-bonn.de/
+Prof. Dr. Frank Bertoldi:
+  affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: bertoldi@uni-bonn.de
+  focus:
+  - ''
+  website: https://astro.uni-bonn.de/~bertoldi
+Prof. Dr. Ian Brock:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: i.brock@uni-bonn.de
+  focus:
+  - Heavy elementary particles
+  - Particle physics at the highest energies
+  - Machine learning in particle physics
+  website: https://pi.physik.uni-bonn.de/~brock
+Prof. Dr. Jeroen Dickschat:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: dickschat@uni-bonn.de
+  focus:
+  - ''
+  website: https://www.chemie.uni-bonn.de/dickschat/de
+Prof. Dr. Jochen Dingfelder:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: dingfelder@physik.uni-bonn.de
+  focus:
+  - Experimental high-energy physics
+  - Hadron collider physics
+  - Higgs boson
+  - Flavor physics
+  - Radiation detectors
+  - microelectronics
+  website: https://www.hep1.physik.uni-bonn.de
+? "Prof. Dr. Martin Weitz\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Institut für Angewandte Physik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: martin.weitz@uni-bonn.de
+  focus:
+  - Experimental quantum optics
+  website: https://www.qo.uni-bonn.de/
+Prof. Dr. Michael Gütschow:
+  affil:
+  - Pharmazeutisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: guetschow@uni-bonn.de
+  focus:
+  - Drug design
+  - Enzyme inhibitors
+  - PROTACs
+  - Activity-based probes
+  website: https://www.pharmchem1.uni-bonn.de/ak-guetschow
+Prof. Dr. Michael Kramer:
+  affil:
+  - Max-Planck-Institut für Radioastronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: mkramer@mpifr-bonn.mpg.de
+  focus:
+  - Fundamental physics
+  - Gravity
+  - Radio astronomy
+  - Pulsars
+  website: https://www.mpifr-bonn.mpg.de/forschung/fundamental
+Prof. Dr. Moritz Sokolowski:
+  affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: sokolowski@pc.uni-bonn.de
+  focus:
+  - Surface Science
+  - Adsorption of functional organic molecules on surfaces
+  - Collective optical properties
+  - Laser and fluorescence spectroscopy
+  website: https://www.iptc.uni-bonn.de/sokolowski/en/group-members-workgroup-professor-sokolowski/moritz-sokolowski
+Prof. Dr. Norbert Wermes:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: wermes@physik.uni-bonn.de
+  focus:
+  - Experimental High Energy Particle Physics
+  - Hadron Collider Physics
+  - Radiation Detectors and Micro Electronics
+  website: https://www.hep1.physik.uni-bonn.de/people/homepages/norbertwermes-professor-of-physics
+? "Prof. Dr. Olav Schiemann\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: schiemann@pc.uni-bonn.de
+  focus:
+  - Structure-Dynamics-Function Relationships
+  - Biomacromolecular Complexes
+  - EPR Spectroscopy
+  website: http://www.schiemann.uni-bonn.de
+Prof. Dr. Pavel Kroupa:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: pkroupa@uni-bonn.de
+  focus:
+  - Stellar populations
+  - Stellar dynamics
+  - Milgromian dynamics
+  - Cosmology
+  website: https://www.astro.uni-bonn.de/~pavel/
+? "Prof. Dr. Peter Vöhringer\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: p.voehringer@uni-bonn.de
+  focus:
+  - Femtochemistry
+  - Laser spectroscopy
+  - Chemical dynamics
+  - Sustainability
+  website: https://www.iptc.uni-bonn.de/mpc/en
+Prof. Dr. Reinhard Beck:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: beck@hiskp.uni-bonn.de
+  focus:
+  - ''
+  website: https://www.hiskp.uni-bonn.de/
+Prof. Dr. Sebastian Hofferberth:
+  affil:
+  - Institut für Angewandte Physik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: hofferberth@iap.uni-bonn.de
+  focus:
+  - Quantum optics
+  - Quantum science
+  - Quantum technology
+  - Ultracold atoms
+  website: https://www.nqo.uni-bonn.de/
+Prof. Dr. Sigurd Höger:
+  affil:
+  - Kekulé-Institut für Organische Chemie und Biochemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: hoeger@uni-bonn.de
+  focus:
+  - pi-Conjugated oligomers and polymers
+  - Macrocycles and molecular spoked wheels
+  - Ladder polymers
+  - Antimicrobial coatings
+  website: https://www.hoeger.uni-bonn.de/
+Prof. Dr. Stefan Grimme:
+  affil:
+  - Mulliken Center for Theoretical Chemistry
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: grimme@thch.uni-bonn.de
+  focus:
+  - Quantum chemistry
+  - Density functional theory
+  - Thermochemistry
+  - Theoretical spectroscopy
+  website: https://www.chemie.uni-bonn.de/grimme/de
+? "Prof. Dr. Thomas Reiprich\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: reiprich@astro.uni-bonn.de
+  focus:
+  - X-ray astronomy
+  - Cosmology
+  - Galaxy clusters
+  - Supermassive black holes
+  website: https://astro.uni-bonn.de/en/research/dark-energy-team
+? "Prof. Dr. Ulf-G. Meißner\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: meissner@hiskp.uni-bonn.de
+  focus:
+  - ''
+  website: ''
+Prof. Dr. Ulrich Kubitscheck:
+  affil:
+  - Clausius-Institut für Physikalische und Theoretische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: u.kubitscheck@uni-bonn.de
+  focus:
+  - Nucleocytoplasmic transport
+  - Neuronal connectomics
+  - Light sheet fluorescence microscopy
+  - Antibiotic mode of action
+  website: https://www.chemiebn.uni-bonn.de/pctc/kubitscheck
+? "Prof. Dr. Ulrike Thoma\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: thoma@hiskp.uni-bonn.de
+  focus:
+  - ''
+  website: ''
+? "Prof. Dr. Walter Witke\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Dekan der Mathematisch-Naturwissenschaftlichen Fakultät
+  email: dekan.mnf@uni-bonn.de
+  focus:
+  - ''
+  website: https://www.mnf.uni-bonn.de/fakultaet/dekanat
+Prof. Dr. rer. nat. Bernhard Ketzer:
+  affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: Bernhard.Ketzer@uni-bonn.de
+  focus:
+  - 'Experimental hadron physics with electromagnetic and hadronic probes: hadron
+    structure and spectroscopy'
+  - 'Physics beyond the Standard Model with hadron physics methods: search for Dark
+    Photons'
+  - 'Detector physics: development of high-resolution, fast Micropattern Gaseous Detectors
+    and readout electronics'
+  website: https://www.agketzer.hiskp.uni-bonn.de/de
+Prof. Dr. rer. nat. habil. Christa Müller:
+  affil:
+  - Pharmazeutisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: Christa.mueller@uni-bonn.de
+  focus:
+  - ''
+  website: http://mueller-group.pharma.uni-bonn.de
+Prof. Florian Bernlochner:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: florian.bernlochner@uni-bonn.de
+  focus:
+  - Heavy Quarks
+  - CKM Metrology with Vub and Vcb
+  - Search for new physics in semileptonic decays
+  - Search for dark photons and heavy neutral leptons at the LHC
+  - Study of collider neutrinos
+  website: ''
+Prof. Frank Bigiel:
+  affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: bigiel@astro.uni-bonn.de
+  focus:
+  - Interstellar Medium
+  - Star Formation
+  - Atomic & Molecular Spectroscopy
+  - Radioastronomy
+  website: https://astro.uni-bonn.de/de/forschung/radioastronomy-ism
+Prof. Günter Mayer:
+  affil:
+  - Life & Medical Sciences Institute (LIMES)
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: gmayer@uni-bonn.de
+  focus:
+  - Aptamers
+  - Optogenetics
+  - Targeted therapies
+  website: http://www.mayerlab.de/
+Prof. Hartmut Schmieden:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: schmieden@physik.uni-bonn.de
+  focus:
+  - ''
+  website: https://www.hsag.physik.uni-bonn.de/
+Prof. Johann Kroha:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: kroha@physik.uni-bonn.de
+  focus:
+  - Theoretical quantum many-body physics
+  - Non-equilibrium dynamics in strongly correlated electron systems and in Bose-Einstein
+    condensates (BEC)
+  website: https://www.kroha.uni-bonn.de/
+Prof. Jürgen Kusche:
+  affil:
+  - Institute of Geodesy and Geoinformation
+  - Collaborative Research Centre SFB1502
+  - Landwirtschaftliche Fakultät
+  email: kusche@uni-bonn.de
+  focus:
+  - Satellite geodesy
+  - Sea level and climate
+  - Terrestrial water cycle
+  - Future sensors and observation systems
+  website: https://www.apmg.uni-bonn.de/
+Prof. Katrin Paeschke:
+  affil:
+  - Medizinische Fakultät
+  - Institut für Klinische Chemie und Klinische Pharmakologie
+  email: paeschke@uni-bonn.de
+  focus:
+  - Nucleic acid structures formation and function in cells
+  - Protein - DNA or RNA interaction
+  - Genome stability regulation
+  - Nucleic acid structure mediated immune changes
+  website: http://www.paeschkelab.de/
+? "Prof. Klaus Desch\n                      \nTRA Matter Steering Committee"
+: affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: desch@uni-bonn.de
+  focus:
+  - Particle Physics
+  - Higgs-Boson
+  - Axions
+  - Gridpix Detectors
+  website: https://www.lhc-ilc.physik.uni-bonn.de
+Prof. Michael Famulok:
+  affil:
+  - Life and Medical Sciences Institute (LIMES)
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: m.famulok@uni-bonn.de
+  focus:
+  - DNA Nanotechnology
+  - Aptamer research
+  - Chemical biology
+  website: http://www.famuloklab.de/
+Prof. Norbert Langer:
+  affil:
+  - Argelander-Institut für Astronomie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: nlanger@astro.uni-bonn.de
+  focus:
+  - Massive star evolution
+  - Origin of the chemical elements
+  - Compact stars in binaries
+  - Gravitational wave sources
+  website: https://astro.uni-bonn.de/~nlanger/
+Prof. PhD Herbert Dreiner:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: dreiner@uni-bonn.de
+  focus:
+  - Theoretical Elementary Particle Physics
+  - Beyond Standard Model Phenomenology
+  - LHC Physics
+  - Light long-lived Particles
+  website: http://www.th.physik.uni-bonn.de/th/People/dreiner/
+? "Prof. Sebastian Neubert\n                      \nTRA Matter Speaker"
+: affil:
+  - Helmholtz-Institut für Strahlen- und Kernphysik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: neubert@hiskp.uni-bonn.de
+  focus:
+  - ''
+  website: https://www.hiskp.uni-bonn.de/?id=663
+Prof. Stefan Linden:
+  affil:
+  - Physikalisches Institut
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: linden@physik.uni-bonn.de
+  focus:
+  - ''
+  website: https://www.nanophotonik.uni-bonn.de/
+Senior-Professor Dieter Meschede:
+  affil:
+  - Institut für Angewandte Physik
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: meschede@uni-bonn.de
+  focus:
+  - Quantum Optics
+  - Quantum Information Science
+  - Laser Physics
+  - Atomic Physics
+  website: http://quantum-technologies.iap.uni-bonn.de/en.html
