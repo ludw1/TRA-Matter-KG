@@ -1,5 +1,5 @@
-? "Dr. Andreas Hansen\n                      \nTRA Matter Steering Committee"
-: affil:
+Dr. Andreas Hansen:
+  affil:
   - Clausius-Institut für Physikalische und Theoretische Chemie
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: hansen@thch.uni-bonn.de
@@ -162,8 +162,8 @@ Dr. Manuel Drees:
   - LHC Physics
   - Cosmological inflation
   website: http://www.th.physik.uni-bonn.de/Groups/drees/
-? "Dr. Michael Lupberger\n                      \nTRA Matter Steering Committee"
-: affil:
+Dr. Michael Lupberger:
+  affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
   - Physikalisches Institut
   - Mathematisch-Naturwissenschaftliche Fakultät
@@ -204,7 +204,7 @@ Dr. rer. nat. Ali El-Tayeb:
   - Development of in vitro assays
   - Development of radioligands, fluorescence ligands
   - Stability and metabolism studies
-  website: http://mueller-group.pharma.uni-bonn.de
+  website: https://www.pharma.uni-bonn.de/pharmazeutische-und-medizinische-chemie/de
 Dr. rer. nat. Farah Noreen Afzal:
   affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
@@ -235,6 +235,16 @@ Dr. rer. nat. Yannick Wunderlich:
   - Amplitude analysis and partial-wave analysis
   - Polarization measurements for photonuclear reactions   and complete experiments
   website: ''
+Jun. Prof. Alessandro Bismuto:
+  affil:
+  - Institut für Anorganische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: bismuto@uni-bonn.de
+  focus:
+  - Low-valent pnictogens species
+  - Bismuth and antimony-based catalysis
+  - Luminescent main group materials
+  website: https://www.bismutolab.com/
 Jun.-Prof. Andrina Nicola:
   affil:
   - Argelander Institut für Astronomie
@@ -302,8 +312,8 @@ Junior Prof. Dr. Patrycja Kielb:
   - AI applications
   - UV/Vis Raman spectro-electrochemistry – method development.
   website: https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/argelander-professur
-? "Junior Prof. Simon Stellmer\n                      \nTRA Matter Steering Committee"
-: affil:
+Junior Prof. Simon Stellmer:
+  affil:
   - Physikalisches Institut
   - Mathematisch-Naturwissenschaftliche Fakultät
   - EXC ML4Q
@@ -332,7 +342,7 @@ Priv. Doz. Dr. Marianne Engeser:
   - Detection of reactive Intermediates
   - Reaction Mechanisms
   - Structure Elucidation
-  website: https://www.chemiebn.uni-bonn.de/oc/forschung/arbeitsgruppen/ak_en/
+  website: https://www.chemie.uni-bonn.de/engeser/de
 Priv. Doz. Dr. Philip Bechtle:
   affil:
   - Physikalisches Institut
@@ -372,8 +382,8 @@ Prof. Claude Duhr:
   - Quantenfeldtheorie
   - Phänomenologie der Elementarteilchen
   website: ''
-? "Prof. Connie Lu\n                      \nTRA Matter Speaker"
-: affil:
+Prof. Connie Lu:
+  affil:
   - Institute of Inorganic Chemistry
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: clu@uni-bonn.de
@@ -383,16 +393,16 @@ Prof. Claude Duhr:
   - Catalysis
   - Energy and sustainability
   website: https://www.chemie.uni-bonn.de/lu/de
-? "Prof. Corinna Kollath\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Corinna Kollath:
+  affil:
   - Physikalisches Institut
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: Corinna.kollath@uni-bonn.de
   focus:
   - ''
   website: https://www.theory.uni-bonn.de/
-? "Prof. Dr. Arne Lützen\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Arne Lützen:
+  affil:
   - Kekulé-Institut für Organische Chemie und Biochemie
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: arne.luetzen@uni-bonn.de
@@ -414,8 +424,8 @@ Prof. Dr. Barbara Kirchner:
   - Solvents and solvent effects
   - Development of tool for analyzing and visualizing trajectories
   website: https://www.chemie.uni-bonn.de/kirchner/de
-? "Prof. Dr. Carsten Urbach\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Carsten Urbach:
+  affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: urbach@hiskp.uni-bonn.de
@@ -490,8 +500,8 @@ Prof. Dr. Jochen Dingfelder:
   - Radiation detectors
   - microelectronics
   website: https://www.hep1.physik.uni-bonn.de
-? "Prof. Dr. Martin Weitz\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Martin Weitz:
+  affil:
   - Institut für Angewandte Physik
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: martin.weitz@uni-bonn.de
@@ -541,8 +551,8 @@ Prof. Dr. Norbert Wermes:
   - Hadron Collider Physics
   - Radiation Detectors and Micro Electronics
   website: https://www.hep1.physik.uni-bonn.de/people/homepages/norbertwermes-professor-of-physics
-? "Prof. Dr. Olav Schiemann\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Olav Schiemann:
+  affil:
   - Clausius-Institut für Physikalische und Theoretische Chemie
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: schiemann@pc.uni-bonn.de
@@ -562,8 +572,8 @@ Prof. Dr. Pavel Kroupa:
   - Milgromian dynamics
   - Cosmology
   website: https://www.astro.uni-bonn.de/~pavel/
-? "Prof. Dr. Peter Vöhringer\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Peter Vöhringer:
+  affil:
   - Clausius-Institut für Physikalische und Theoretische Chemie
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: p.voehringer@uni-bonn.de
@@ -614,8 +624,8 @@ Prof. Dr. Stefan Grimme:
   - Thermochemistry
   - Theoretical spectroscopy
   website: https://www.chemie.uni-bonn.de/grimme/de
-? "Prof. Dr. Thomas Reiprich\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Thomas Reiprich:
+  affil:
   - Argelander-Institut für Astronomie
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: reiprich@astro.uni-bonn.de
@@ -625,8 +635,8 @@ Prof. Dr. Stefan Grimme:
   - Galaxy clusters
   - Supermassive black holes
   website: https://astro.uni-bonn.de/en/research/dark-energy-team
-? "Prof. Dr. Ulf-G. Meißner\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Ulf-G. Meißner:
+  affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: meissner@hiskp.uni-bonn.de
@@ -644,16 +654,16 @@ Prof. Dr. Ulrich Kubitscheck:
   - Light sheet fluorescence microscopy
   - Antibiotic mode of action
   website: https://www.chemiebn.uni-bonn.de/pctc/kubitscheck
-? "Prof. Dr. Ulrike Thoma\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Ulrike Thoma:
+  affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: thoma@hiskp.uni-bonn.de
   focus:
   - ''
   website: ''
-? "Prof. Dr. Walter Witke\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Dr. Walter Witke:
+  affil:
   - Dekan der Mathematisch-Naturwissenschaftlichen Fakultät
   email: dekan.mnf@uni-bonn.de
   focus:
@@ -679,7 +689,7 @@ Prof. Dr. rer. nat. habil. Christa Müller:
   email: Christa.mueller@uni-bonn.de
   focus:
   - ''
-  website: http://mueller-group.pharma.uni-bonn.de
+  website: https://www.pharma.uni-bonn.de/pharmazeutische-und-medizinische-chemie/de/startseite
 Prof. Florian Bernlochner:
   affil:
   - Physikalisches Institut
@@ -754,8 +764,8 @@ Prof. Katrin Paeschke:
   - Genome stability regulation
   - Nucleic acid structure mediated immune changes
   website: http://www.paeschkelab.de/
-? "Prof. Klaus Desch\n                      \nTRA Matter Steering Committee"
-: affil:
+Prof. Klaus Desch:
+  affil:
   - Physikalisches Institut
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: desch@uni-bonn.de
@@ -775,6 +785,16 @@ Prof. Michael Famulok:
   - Aptamer research
   - Chemical biology
   website: http://www.famuloklab.de/
+Prof. Nikolay Kornienko:
+  affil:
+  - Institut für Anorganische Chemie
+  - Mathematisch-Naturwissenschaftliche Fakultät
+  email: nkornien@uni-bonn.de
+  focus:
+  - Sustainable Electrocatalysis
+  - Material Design
+  - Applied Spectroscopy
+  website: https://sites.google.com/site/catalysisandenergy/home_1?authuser=0
 Prof. Norbert Langer:
   affil:
   - Argelander-Institut für Astronomie
@@ -786,6 +806,17 @@ Prof. Norbert Langer:
   - Compact stars in binaries
   - Gravitational wave sources
   website: https://astro.uni-bonn.de/~nlanger/
+Prof. PD Markus Gabriel:
+  affil:
+  - Institut für Philosophie
+  - Philosophische Fakultät
+  email: gabrielm@uni-bonn.de
+  focus:
+  - Erkenntnistheorie
+  - Metaphysik/Ontologie
+  - Philosophie des Geistes
+  - Philosophie und Ethik der K.I.
+  website: https://www.philosophie.uni-bonn.de/institut/personen/institutsprofessuren/prof-dr-markus-gabriel
 Prof. PhD Herbert Dreiner:
   affil:
   - Physikalisches Institut
@@ -797,8 +828,8 @@ Prof. PhD Herbert Dreiner:
   - LHC Physics
   - Light long-lived Particles
   website: http://www.th.physik.uni-bonn.de/th/People/dreiner/
-? "Prof. Sebastian Neubert\n                      \nTRA Matter Speaker"
-: affil:
+Prof. Sebastian Neubert:
+  affil:
   - Helmholtz-Institut für Strahlen- und Kernphysik
   - Mathematisch-Naturwissenschaftliche Fakultät
   email: neubert@hiskp.uni-bonn.de
@@ -824,3 +855,31 @@ Senior-Professor Dieter Meschede:
   - Laser Physics
   - Atomic Physics
   website: http://quantum-technologies.iap.uni-bonn.de/en.html
+ClusterTestA:
+  type: Excellence Cluster
+  members:
+  - Prof. Dr. Arne Lützen
+  - Prof. Dr. Barbara Kirchner
+  - Prof. Dr. Carsten Urbach
+  - Prof. Dr. Cristiano Porciani
+  - Prof. Dr. David Luitz
+  - Prof. Dr. Dirk Menche
+  focus:
+  - Quantum Chemistry
+  - Quantum Cluster Equilibrium Mode
+  - Ab Initio and Traditional Molecular Dynamics Simulations
+  - Solvents and Solvent Effects
+ClusterTestB:
+  type: SFB
+  members:
+  - Dr. rer. nat. Ali El-Tayeb
+  - Dr. rer. nat. Farah Noreen Afzal
+  - Prof. Florian Bernlochner
+  - Prof. Frank Bigiel
+  - Prof. Günter Mayer
+  focus:
+  - Quantum Chemistry
+  - Density Functional Theory
+  - Thermochemistry
+  - Theoretical Spectroscopy
+

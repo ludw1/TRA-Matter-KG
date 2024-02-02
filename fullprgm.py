@@ -13,7 +13,7 @@ from visual import GraphVisualization
 # customization
 
 url = r"https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra-2-matter/mitgliederverzeichnis" # TRA matter url
-onto_path = r"" # location of the ontology file
+onto_path = r"C:\Users\ludwi\Desktop\master_thesis\Code\TRA\TRAOnto02.ttl" # location of the ontology file
 person_clr = "blue" 
 affil_clr = "green"
 topic_clr = "orange"

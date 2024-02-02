@@ -12,11 +12,13 @@ ngraph_output_directory = r"" # neighbour graph directory
 png_folder = r"" # folder where all pngs will be saved, please end it with a trailing "\\" or "/"
 yaml_file = r"" # location of the yaml file
 
-complete_ngraph = False # If true: only the full graph will be produced, if false: only the pngs of the small graphs will be produced
+neighbour_graph = False # if true: a neighbour graph will be produced, if false: no neighbour graph will be produced
+complete_ngraph = True # If true: only the full graph will be produced, if false: only the pngs of the small graphs will be produced
 link_affil = False # WARNING!!! Will make the graph extremely large and slow!!! Use at your own discretion
 old_neigh = False # if true: the old neighbour graph code will be used, if false: the new one will be used
 max_persons = 5 # maximum number of persons in a neighbour graph
 
+cluster_clr = {"Excellence Cluster":"red","SFB":"purple"} # color for the different types of clusters
 person_clr = "blue" 
 affil_clr = "green"
 topic_clr = "orange"
@@ -40,12 +42,17 @@ yaml.default_flow_style = False
 with open(yaml_file,"r",encoding="utf-8") as f:
     data_yaml = yaml.load(f)
     data = []
+    cluster_data = [] # this is to store the data for clusters, sfbs etc.
     for name,info in data_yaml.items():
-        email = info["email"]
-        website = info["website"]
-        affil = "\n".join(info["affil"])
-        focus = "\n".join(info["focus"])
-        data.append([name,email,website,affil,focus])
+        if "type" in info:
+            # this is not a person, behave differently
+            cluster_data.append([name,info["focus"],info["members"], info["type"]])
+        else:
+            email = info["email"]
+            website = info["website"]
+            affil = "\n".join(info["affil"])
+            focus = "\n".join(info["focus"])
+            data.append([name,email,website,affil,focus])
 for name, email, website, affil, focus in data:
     G.add_node(name, color = person_clr, title = str([email,website]))
     for f in focus.split("\n"): # link persons to focuses defined in the ontology
@@ -56,7 +63,14 @@ for name, email, website, affil, focus in data:
             if a != "":
                 G.add_node(a, color = affil_clr, title=a)
                 G.add_edge(name,a)
-                
+for name, focus, members, type in cluster_data:
+    # I can imagine using a dict of rules depending on the type of cluster, right now it just controls color
+    G.add_node(name, color = cluster_clr[type], title = name)
+    # connect members and topics
+    for m in members:
+        G.add_edge(name,m)
+    for f in focus:
+        G.add_edge(name,f.replace(" ", "_"))
 # remove nodes that are just for classification in the ontology
 G.remove_node("Class")
 G.remove_node("Phenomenology")
@@ -161,64 +175,65 @@ for node in nx.get_node_attributes(G,"color",default="None").items():
     if node[1] == "blue": # all persons have color blue
         persons.append(node[0])
 # old neighbour graph code
-if old_neigh:
-    J = nx.Graph()
-    for node in persons:
-        if not complete_ngraph:
-            J = nx.Graph() # individual neighbour graph
-        label_dict = {}
-        n_list = []
-        get_neigh(G,node,n_list) 
-        neigh_graph(J,node,n_list,label_dict,persons) # link all immediate nodes to the person
-        for n in n_list:
+if neighbour_graph:
+    if old_neigh:
+        J = nx.Graph()
+        for node in persons:
+            if not complete_ngraph:
+                J = nx.Graph() # individual neighbour graph
+            label_dict = {}
             n_list = []
-            get_neigh(G,n,n_list)
-            neigh_graph(J,n,n_list,label_dict,persons)
-        if not complete_ngraph:
+            get_neigh(G,node,n_list) 
+            neigh_graph(J,node,n_list,label_dict,persons) # link all immediate nodes to the person
+            for n in n_list:
+                n_list = []
+                get_neigh(G,n,n_list)
+                neigh_graph(J,n,n_list,label_dict,persons)
+            if not complete_ngraph:
+                pos = nx.spring_layout(J)
+                color_map = [a for a in nx.get_node_attributes(J,"color").values()]
+                vis = GraphVisualization(J, pos, node_text = label_dict, node_text_position= 'top center', node_size= 20,node_color=color_map)
+                fig = vis.create_figure(showlabel=True)
+                filename = node.split("\n")[0]
+                fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
+        if complete_ngraph:
+            J = nx.convert_node_labels_to_integers(J)
+            net2 = Network(
+                notebook=False,
+                # bgcolor="#1a1a1a",
+                cdn_resources="remote",
+                height="900px",
+                width="100%",
+                select_menu=True,
+                # font_color="#cccccc",
+                filter_menu=False,
+            )
+
+            net2.from_nx(J)
+            net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
+            net2.show(ngraph_output_directory, notebook=False)
+    else: # new neighbour graph code that uses the ego graph function and cuts off when a certain number of persons is reached
+        for node in persons:
+            r = 1
+            while True:
+                J = nx.ego_graph(G,node, radius = r) # generate graph with radius r around node
+                pers_contained = 0
+                if G.degree[node] == 0: # this is to catch people that have not entered any topics
+                    break
+                for node_p in J.nodes(): # go through all nodes in the graph and count how many persons are in it
+                    if node_p in persons:
+                        pers_contained += 1
+                if pers_contained > max_persons: # if we exceed the maximum number of persons, break
+                    break
+                else:
+                    r += 1
+                if r > 10: # This is to catch people that are not connected to the ontology
+                    print("Radius exceeded",node)
+                    break
+            # generate the graph
             pos = nx.spring_layout(J)
             color_map = [a for a in nx.get_node_attributes(J,"color").values()]
-            vis = GraphVisualization(J, pos, node_text = label_dict, node_text_position= 'top center', node_size= 20,node_color=color_map)
+            vis = GraphVisualization(J, pos, node_text_position= 'top center', node_size= 20,node_color=color_map)
             fig = vis.create_figure(showlabel=True)
             filename = node.split("\n")[0]
-            fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000) # for svgs change the filename to svg and the format
-    if complete_ngraph:
-        J = nx.convert_node_labels_to_integers(J)
-        net2 = Network(
-            notebook=False,
-            # bgcolor="#1a1a1a",
-            cdn_resources="remote",
-            height="900px",
-            width="100%",
-            select_menu=True,
-            # font_color="#cccccc",
-            filter_menu=False,
-        )
-
-        net2.from_nx(J)
-        net2.force_atlas_2based(central_gravity=0.01, gravity=-31)
-        net2.show(ngraph_output_directory, notebook=False)
-else: # new neighbour graph code that uses the ego graph function and cuts off when a certain number of persons is reached
-    for node in persons:
-        r = 1
-        while True:
-            J = nx.ego_graph(G,node, radius = r) # generate graph with radius r around node
-            pers_contained = 0
-            if G.degree[node] == 0: # this is to catch people that have not entered any topics
-                break
-            for node_p in J.nodes(): # go through all nodes in the graph and count how many persons are in it
-                if node_p in persons:
-                    pers_contained += 1
-            if pers_contained > max_persons: # if we exceed the maximum number of persons, break
-                break
-            else:
-                r += 1
-            if r > 10: # This is to catch people that are not connected to the ontology
-                print("Radius exceeded",node)
-                break
-        # generate the graph
-        pos = nx.spring_layout(J)
-        color_map = [a for a in nx.get_node_attributes(J,"color").values()]
-        vis = GraphVisualization(J, pos, node_text_position= 'top center', node_size= 20,node_color=color_map)
-        fig = vis.create_figure(showlabel=True)
-        filename = node.split("\n")[0]
-        fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000)
+            fig.write_image(fr"{png_folder}{filename}.png",format = "png",width=3000,height=1000)

@@ -100,50 +100,50 @@
         rdfs:subClassOf :Model .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Unraveling_the_molecular_mechanism_of_O2-converting_copper-containing_enzymes.> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#(Local)_coupled_cluster_methods
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#(Local)_coupled_cluster_methods> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/(Local)_coupled_cluster_methods
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/(Local)_coupled_cluster_methods> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Atomic_&_Molecular_Spectroscopy
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Atomic_&_Molecular_Spectroscopy> rdf:type owl:Class ;
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Atomic_&_Molecular_Spectroscopy
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Atomic_&_Molecular_Spectroscopy> rdf:type owl:Class ;
                                                                                                            rdfs:subClassOf :Method .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics> rdf:type owl:Class ;
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Detector_physics:_development_of_high-resolution,_fast_Micropattern_Gaseous_Detectors_and_readout_electronics> rdf:type owl:Class ;
                                                                                                                                                                                          rdfs:subClassOf :Detectors .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Development_of_radioligands,_fluorescence_ligands
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Development_of_radioligands,_fluorescence_ligands> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Development_of_radioligands,_fluorescence_ligands
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Development_of_radioligands,_fluorescence_ligands> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Electron_transfer_via_coupled_Tyr/Trp_networks_in_metalloenzymes.> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Non-equilibrium_dynamics_in_strongly_correlated_electron_systems_and_in_Bose-Einstein_condensates_(BEC)> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Photoswitsches,_their_synthesis,_investigation,_and_their_use_in_supramolecular_architectures> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Rational_design_of_artificial_copper/heme-containing_biocatalysts.
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Rational_design_of_artificial_copper/heme-containing_biocatalysts.> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Rational_design_of_artificial_copper/heme-containing_biocatalysts.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Rational_design_of_artificial_copper/heme-containing_biocatalysts.> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Solid/liquid_interface
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#Solid/liquid_interface> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Solid/liquid_interface
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/Solid/liquid_interface> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#UV/Vis_Raman_spectro-electrochemistry_–_method_development.
-<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11#UV/Vis_Raman_spectro-electrochemistry_–_method_development.> rdf:type owl:Class .
+###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/UV/Vis_Raman_spectro-electrochemistry_–_method_development.
+<http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/UV/Vis_Raman_spectro-electrochemistry_–_method_development.> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/ludwi/ontologies/2023/10/untitled-ontology-11/AI_applications

@@ -28,7 +28,7 @@ def person_scr(url): # scrape webpage for personal information
     website = website.find('a')['href'] if website and website.find('a') else ""
     affil = affil.find('ul').text.strip() if affil and affil.find('ul') else ""
     focus = focus.find('ul').text.strip() if focus and focus.find('ul') else ""
-    return name,email,website,affil,focus
+    return name.split("\n")[0],email,website,affil,focus
 
 def urlopen(url): # go through the main tra matter page and scrape all person webpages
     pers_data = []
